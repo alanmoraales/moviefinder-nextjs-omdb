@@ -1,7 +1,7 @@
 import styles from './Header.module.css';
 
 import Logo from '../res/svg/Logo.svg';
-import DynamicSearchBar from './DynamicSearchBar';
+import SearchBar from './SearchBar';
 
 
 class Header extends React.Component {
@@ -9,7 +9,7 @@ class Header extends React.Component {
         return(
             <div className={styles.container}>
                 <div className={styles.logo}><Logo id={styles.logo}/></div>
-                <div className={styles.searchbar}><DynamicSearchBar/></div>
+                <div className={styles.searchbar}><SearchBar/></div>
             </div>
         )
     }

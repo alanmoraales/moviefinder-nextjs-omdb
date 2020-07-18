@@ -17,7 +17,6 @@ class SearchBar extends React.Component {
 
     handleEntry(e) {
         this.setState({terms: e.target.value});
-        console.log(e.target.value);
     }
 
     handleSubmit(e) {

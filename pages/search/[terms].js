@@ -22,20 +22,19 @@ class Results extends React.Component {
         const resJson = await res.json();
 
         //console.log(res);
-        //console.log(resJson);
+        console.log(resJson);
         return {results: resJson, terms: finalTerms};
     }
 
     render() {
         return(
-
             <div className={styles.container}>
                 <div className={styles.results}>
                     <div className={styles.header}><Header/></div>
-                    <div>resultados para:</div>
+                    <div>results for:</div>
                     <div className={styles.terms}>{this.props.terms}</div>
                     <div className={styles.movies}>
-                        <Movies movies={this.props.results.Search} posterHeight={230}/>
+                        {(this.props.results.Search ? <Movies movies={this.props.results.Search} posterHeight={230}/> : "No results were found.")}
                     </div>
                 </div>
             </div>
