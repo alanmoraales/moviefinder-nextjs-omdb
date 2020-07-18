@@ -1,0 +1,67 @@
+
+.maingrid {
+    display: grid;
+    grid-template-columns: 100%;
+
+    justify-items: center;
+}
+
+.image {
+    display: none;
+}
+
+.searchgrid {
+    box-sizing: border-box;
+    padding: 40px;
+    width: 100%;
+
+    display: grid;
+    grid-template-rows: 50% 50%;
+    min-height: calc(100vh);  
+    text-align: center;
+
+    max-width: 500px;
+}
+
+#logo {
+    margin-top: 15%;
+    margin-bottom: 40px;
+}
+
+#github {
+    width: 100%;
+    align-self: flex-end;
+}
+
+@media(min-width: 1025px) {
+    .maingrid {
+        grid-template-columns: 40% 60%;
+    }
+
+    .image {
+        display: grid;
+        grid-template-rows: 100%;
+
+        padding: 0px;
+
+        padding-left: 40px;
+        padding-bottom: 40px;
+
+        background-image: url("/index.jpg");
+        background-position: center;
+        background-size: cover;
+
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+    }
+
+    .image div {
+        align-self: flex-end;
+        justify-self: flex-start;
+    }
+    .image div a {
+        text-decoration: none;
+        color: #ACACAC;
+    }
+}

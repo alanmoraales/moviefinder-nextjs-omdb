@@ -1,0 +1,15 @@
+.moviesFlex {
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+
+}
+
+.movie {
+    margin-bottom: 20px;
+    
+}
+

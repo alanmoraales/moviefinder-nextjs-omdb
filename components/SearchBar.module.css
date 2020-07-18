@@ -1,0 +1,28 @@
+
+.form {
+    background-color: #1E1E1E;
+}
+
+.input {
+    width: 80%;
+    background-color: #1E1E1E;
+    color: #ACACAC;
+    border: 0px;
+
+    box-sizing: border-box;
+    padding: 10px;
+    
+    font-size: 18px;
+}
+
+.button {
+    border: 0px;
+    width: 20%;
+    background-color: #1E1E1E;
+    color: #01B4E4;
+
+    box-sizing: border-box;
+    padding: 10px;
+
+    font-size: 18px;
+}

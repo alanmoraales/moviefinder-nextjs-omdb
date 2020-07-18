@@ -1,0 +1,16 @@
+.movie {
+    display: grid;
+    grid-template-rows: auto auto;
+
+    box-sizing: border-box;
+}
+
+.poster {
+    margin-bottom: 15px;
+}
+
+.title {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}

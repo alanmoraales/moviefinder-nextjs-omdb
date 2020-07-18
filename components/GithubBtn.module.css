@@ -1,0 +1,33 @@
+.botton {
+    text-decoration: none;
+    color: #01B4E4;
+
+    background-color: #1E1E1E;
+    display: block;
+
+    font-size: 18px;
+
+    padding: 18px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+    align-items: center;
+    justify-items: left;
+}
+
+.githublogo {
+    font-size: 27px;
+    color: white;   
+    
+    justify-self: end;
+    margin-right: 20px;
+}
+
+@media(min-width: 500px) {
+    .grid {
+        grid-template-columns: 40% 60%;
+    }
+}
