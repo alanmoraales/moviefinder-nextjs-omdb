@@ -27,7 +27,7 @@ class SearchBar extends React.Component {
             Router.push('/search/[terms]', `/search/${finalTerms}`);
 
         } else {
-            alert("Inserte datos para la búsqueda");
+            alert("Please enter search terms.");
         }
     }
 

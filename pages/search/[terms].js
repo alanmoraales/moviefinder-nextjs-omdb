@@ -18,7 +18,7 @@ class Results extends React.Component {
         const { terms } = ctx.query;
         let finalTerms = terms.replace('-', ' ');
 
-        const res = await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=7011a24a&s=${finalTerms}`);
+        const res = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=7011a24a&s=${finalTerms}`);
         const resJson = await res.json();
 
         //console.log(res);
