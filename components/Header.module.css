@@ -6,6 +6,8 @@
 .logo {
     justify-self: left;
     align-self: flex-start;
+
+    cursor: pointer;
 }
 
 #logo {
