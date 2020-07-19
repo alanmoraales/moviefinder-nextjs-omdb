@@ -17,7 +17,7 @@ class Movies extends React.Component {
                 {movies.map(movie => {
                     if(movie.Poster != 'N/A') {
                         return <div key={movie.imdbID} className={styles.movie}>
-                                <Movie image={movie.Poster} title={movie.Title}
+                                <Movie imdbID={movie.imdbID} image={movie.Poster} title={movie.Title}
                                     imgHeight={this.props.posterHeight}
                                     imgWidth={width}/>
                             </div>
