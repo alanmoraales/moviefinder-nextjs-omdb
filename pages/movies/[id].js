@@ -7,12 +7,9 @@ class MovieInfo extends React.Component {
 
     static async getInitialProps(ctx) {
         const { id } = ctx.query;
-        console.log(id);
 
         const res = await fetch(`https://www.omdbapi.com/?i=${id}&apikey=7011a24a`);
         const resJson = await res.json();
-
-        console.log(resJson);
 
         return { movie: resJson};
     }
@@ -36,7 +33,7 @@ class MovieInfo extends React.Component {
                                 {movie.Genre ? <p>Genre: {movie.Genre}</p> : <p>Genre: N/A</p>}
                                 {movie.Runtime ? <p>Duration: {movie.Runtime}</p> : <p>Duration: N/A</p>}
                                 {movie.Released ? <p>Released: {movie.Released}</p> : <p>Released: N/A</p>}
-                                {movie.Ratings ? <p>Rate: {movie.Ratings[0].Value}</p> : <p>Rate: N/A</p>}
+                                {movie.Ratings[0] ? <p>Rate: {movie.Ratings[0].Value}</p> : <p>Rate: N/A</p>}
                                 {movie.Actors ? <p>Actors: {movie.Actors}</p> : <p>Actors: N/A</p>}
                             </div>
                             <div>

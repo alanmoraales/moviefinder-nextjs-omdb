@@ -21,8 +21,6 @@ class Results extends React.Component {
         const res = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=7011a24a&s=${finalTerms}`);
         const resJson = await res.json();
 
-        //console.log(res);
-        console.log(resJson);
         return {results: resJson, terms: finalTerms};
     }
 
